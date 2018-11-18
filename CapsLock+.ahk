@@ -209,6 +209,57 @@ try
 Capslock2:=""
 Return
 
+;-------- add upper word hotkey
++a::
+try
+    runFunc(keyset.caps_ua)
+Capslock2:=""
+return
+
++e::
+try
+    runFunc(keyset.caps_ue)
+Capslock2:=""
+return
+
++h::
+try
+    runFunc(keyset.caps_uh)
+Capslock2:=""
+return
+
++j::
+try
+    runFunc(keyset.caps_uj)
+Capslock2:=""
+return
+
++k::
+try
+    runFunc(keyset.caps_uk)
+Capslock2:=""
+return
+
++l::
+try
+    runFunc(keyset.caps_ul)
+Capslock2:=""
+return
+
++w::
+try
+    runFunc(keyset.caps_uw)
+Capslock2:=""
+return
+
++b::
+try
+    runFunc(keyset.caps_ub)
+Capslock2:=""
+return
+
+;-------------------upper word end
+
 `::
 try
     runFunc(keyset.caps_backQuote)
@@ -737,4 +788,15 @@ return
 GuiClose:
 GuiEscape:
 Gui, Cancel
+return
+
+
+!=::
+try
+    runFunc("keyFunc_tabNext")
+return
+
+!-::
+try
+    runFunc("keyFunc_tabPrve")
 return
