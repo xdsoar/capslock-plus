@@ -791,12 +791,22 @@ Gui, Cancel
 return
 
 
-!=::
+>!=::
 try
     runFunc("keyFunc_tabNext")
 return
 
-!-::
+>!-::
+try
+    runFunc("keyFunc_tabPrve")
+return
+
+<!1::
+try
+    runFunc("keyFunc_tabNext")
+return
+
+<!`::
 try
     runFunc("keyFunc_tabPrve")
 return
